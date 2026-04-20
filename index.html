@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI-Powered Contact Centre &amp; Unified Communications | 8x8</title>
+  <title>8x8 Demo</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -684,7 +684,7 @@
       margin-bottom: 16px;
     }
     /* ────────────── 8x8 CHAT LAUNCHER ────────────── */
-    [id="__8x8-chat-button-container-script_90642021669e25168d9c255.36008049"] {
+    [id="__8x8-chat-button-container-script_90293629693065d627c844.73000735"] {
       display: none;
     }
 
@@ -1116,7 +1116,7 @@
   </div>
   <!-- ══════ NAV ══════ -->
   <nav class="nav">
-    <a href="https://githubmatthewmarchantcouk.github.io/8x8Retail/cobrowse/" class="nav-logo">8<span class="x">x</span>8<sup style="font-size:11px;vertical-align:super;font-weight:400;color:#04888A;">®</sup></a>
+    <a href="https://githubmatthewmarchantcouk.github.io/8x8Demo2026/cobrowse/" class="nav-logo">8<span class="x">x</span>8<sup style="font-size:11px;vertical-align:super;font-weight:400;color:#04888A;">®</sup></a>
     <ul class="nav-links">
       <li>
         <a href="#">Products <span class="arrow">▾</span></a>
@@ -1740,14 +1740,14 @@
       <button class="cbf-close" onclick="closeCallbackForm()" aria-label="Close">✕</button>
     </div>
 
-    <form name="WebCallBack" action="https://vcc-eu6.8x8.com/SC/webcallback.php" method="get"
+    <form name="WebCallBack" action="https://vcc-eu5.8x8.com/SC/webcallback.php" method="get"
           oninput="(function(f){ f.extTransactionData.value = '[Name|' + f.fname.value + ' ' + f.lname.value + '][Location|' + f.elements.location.value + '][Reason|' + f.reason.value + ']'; })(document.WebCallBack)">
       <input type="hidden" name="extTransactionData"/>
-      <input type="hidden" name="tenant"          value="eightx8uklimited01"/>
-      <input type="hidden" name="token"           value="edd0316d07bb7b60909c935725c384528124e7341c5a7b8d8cc46e965ae8600f"/>
-      <input type="hidden" name="channel_number"  value="442046151183"/>
-      <input type="hidden" name="callback_type"   value="2"/>
-      <input type="hidden" name="queue_id"        value="532"/>      
+      <input type="hidden" name="tenant"          value="uksalesenablement47801"/>
+      <input type="hidden" name="token"           value="6417c61d2e76696a46841e53a00368a6441978972cdf471ac2d39307e14df09e"/>
+      <input type="hidden" name="channel_number"  value="442039845210"/>
+      <input type="hidden" name="callback_type"   value="1"/>
+      <input type="hidden" name="queue_id"        value="109"/>      
 
       <div class="cbf-body">
         <div class="cbf-row">
@@ -1825,53 +1825,55 @@
   </div>
 
   <!-- 8x8 chat widget button container (hidden — triggered via custom launcher above) -->
-  <div id="__8x8-chat-button-container-script_90642021669e25168d9c255.36008049"></div>
+  <div id="__8x8-chat-button-container-script_90293629693065d627c844.73000735"></div>
   <!-- This script will not interfere with the button layout, you just need to include it in the same page. It must also be within the <body> section of the page, preferably just before the ending tag. -->
-  <script type="text/javascript">
-  (function(c, f, ef){
-      var typeofC = Object.prototype.toString.call(c);
-      var props = (typeofC === '[object Object]' && c) || {};
-      var cb = f || (typeofC === '[object Function]' && c);
-      var config = {
-          scriptUuid: "script_90642021669e25168d9c255.36008049",
-          tenant: "ZWlnaHR4OHVrbGltaXRlZDAx",
-          channelName: "8x8 Retail",
-          channelUuid: "Q-86HJMvT1y8SOdh0xxbTQ",
-          domain: "https://vcc-eu6.8x8.com",
-          buttonContainerId: "__8x8-chat-button-container-script_90642021669e25168d9c255.36008049",
-          align: "right",
-      };
-      var url = new URL("https://cloud8-cc-geo.8x8.com/vcc-chat-channels/public/webchat/discovery");
-      var params = { domain: config.domain, tenant: config.tenant, channelUuid: config.channelUuid };
-      url.search = new URLSearchParams(params).toString();
-      fetch(url)
-          .then(response => response.json())
-          .then(data => config.domain = !data.domain ? config.domain : data.domain)
-          .catch(error => console.warn('Failed to retrieve override domain, will continue using ', config.domain, error))
-          .finally(() => loadChat());
-      function loadChat() {
-          var se = document.createElement("script");
-          se.type = "text/javascript";
-          se.async = true;
-          se.src = props.loaderURL || (config.domain + "/CHAT/common/js/chatv3.js");
-          Object.keys(config).forEach(function (k) { se.dataset[k] = config[k] });
-          Object.keys(props).forEach(function (k) { se.dataset[k] = props[k] });
-          function handleInitEvent(e) {
-              var initFn = e.detail.init;
-              initFn(config, cb);
-              se.removeEventListener('init', handleInitEvent)
-          }
-          function handleErrorEvent(e) {
-              ef && ef(e);
-              se.removeEventListener('customerror', handleErrorEvent);
-          }
-          se.addEventListener('init', handleInitEvent);
-          se.addEventListener('customerror', handleErrorEvent);
-          var os = document.getElementsByTagName("script")[0];
-          os.parentNode.insertBefore(se, os);
-      }
-  })();
-  </script>
+    <script type="text/javascript">
+    (function(c, f, ef){
+        var typeofC = Object.prototype.toString.call(c);
+        var props = (typeofC === '[object Object]' && c) || {};
+        var cb = f || (typeofC === '[object Function]' && c);
+        var config = {
+            scriptUuid: "script_90293629693065d627c844.73000735",
+            tenant: "dWtzYWxlc2VuYWJsZW1lbnQ0NzgwMQ",
+            channelName: "AIStudioWebChat",
+            channelUuid: "347i887mRoq1Lo3evvbUnw",
+            domain: "https://vcc-eu5.8x8.com",
+            buttonContainerId: "__8x8-chat-button-container-script_90293629693065d627c844.73000735",
+            align: "right",
+        };
+
+        var url = new URL("https://cloud8-cc-geo.8x8.com/vcc-chat-channels/public/webchat/discovery");
+        var params = { domain: config.domain, tenant: config.tenant, channelUuid: config.channelUuid };
+        url.search = new URLSearchParams(params).toString();
+        fetch(url)
+            .then(response => response.json())
+            .then(data => config.domain = !data.domain ? config.domain : data.domain)
+            .catch(error => console.warn('Failed to retrieve override domain, will continue using ', config.domain, error))
+            .finally(() => loadChat());
+
+        function loadChat() {
+            var se = document.createElement("script");
+            se.type = "text/javascript";
+            se.async = true;
+            se.src = props.loaderURL || (config.domain + "/CHAT/common/js/chatv3.js");
+            Object.keys(config).forEach(function (k) { se.dataset[k] = config[k] });
+            Object.keys(props).forEach(function (k) { se.dataset[k] = props[k] });
+            function handleInitEvent(e) {
+                var initFn = e.detail.init;
+                initFn(config, cb);
+                se.removeEventListener('init', handleInitEvent)
+            }
+            function handleErrorEvent(e) {
+                ef && ef(e);
+                se.removeEventListener('customerror', handleErrorEvent);
+            }
+            se.addEventListener('init', handleInitEvent);
+            se.addEventListener('customerror', handleErrorEvent);
+            var os = document.getElementsByTagName("script")[0];
+            os.parentNode.insertBefore(se, os);
+        }
+    })();
+    </script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -1930,9 +1932,9 @@
   <script>
     function triggerChat() {
       var btn = document.querySelector(
-        '#__8x8-chat-button-container-script_90642021669e25168d9c255\\.36008049 button, ' +
-        '#__8x8-chat-button-container-script_90642021669e25168d9c255\\.36008049 [role="button"], ' +
-        '#__8x8-chat-button-container-script_90642021669e25168d9c255\\.36008049 a'
+        '#__8x8-chat-button-container-script_90293629693065d627c844\\.73000735 button, ' +
+        '#__8x8-chat-button-container-script_90293629693065d627c844\\.73000735 [role="button"], ' +
+        '#__8x8-chat-button-container-script_90293629693065d627c844\\.73000735 a'
       );
       if (btn) btn.click();
     }
@@ -1948,7 +1950,7 @@
   o&&Object.keys(o).map(function(k){r.setAttribute(k,o[k])});
   r.async=1;r.src='https://'+t+'/license'+c+'/dist/primary-bundle.js';
   w=i.getElementsByTagName(g)[0];w.parentNode.insertBefore(r,w);
-  })(window,document,'script','data-8x8-co-browsing','cb.8x8.com','64b191796da2a0004d8021b6',{
+  })(window,document,'script','data-8x8-co-browsing','cb.8x8.com','61e9b014325168004feb37dc',{
   'data-8x8-co-browsing-multi-domain': true,
   'data-8x8-co-browsing-mode':'full-control'
   });
